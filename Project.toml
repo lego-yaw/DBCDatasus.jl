@@ -1,7 +1,7 @@
 name = "ReadDBC"
 uuid = "79d50320-df92-4ae6-9b90-d461b5bc1756"
 authors = ["Bright-yaw <amenubright@gmail.com> and contributors"]
-version = "1.0.0-DEV"
+version = "1.0.0"
 
 [deps]
 DBFTables = "75c7ada1-017a-5fb6-b8c7-2125ff2d6c93"
@@ -12,6 +12,8 @@ Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [compat]
 julia = "1.10.4"
+DBFTables = "1.2.6"
+DataFrames = "1.6.1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
