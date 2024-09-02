@@ -8,12 +8,18 @@ using DBFTables
 using DataFrames
 using Logging
 using Libdl
+using Base.Filesystem
 
 
 # Defining function dbctodbf
 function dbctodbf(input_file::String, output_file::String)
+    # Set path for .dll files
+    lib_path = "src/libdbc2dbf.dll"
+    # Change permissions on the file before loading (optional and platform-dependent)
+    chmod(lib_path, 0o755)
+
     # Load the shared library
-    lib = dlopen("src/libdbc2dbf.dll")
+    lib = dlopen(lib_path)
     
     # Ensure the library is properly loaded
     if lib === C_NULL
