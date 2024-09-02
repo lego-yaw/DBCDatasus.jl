@@ -1,5 +1,6 @@
-using Libdl
+#using Libdl
 using Base.Filesystem
+using Base.Libc.Libdl
 
 function dbctodbf(input_file::String, output_file::String)
    
