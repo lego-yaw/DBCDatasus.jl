@@ -36,7 +36,7 @@ or
 >>> dbctodbc("path/to/file.dbc, path/to/file.dbf) # input file is .dbc file and output file is .dbf
 
 # converting dbc into dataframe Table
->>> using readdbc
+>>> using ReadDBC
 >>> df = dbcTable("path/to/file.dbc)" # input file is .dbc file and output file is in table format
 >>> head(df) 
 
