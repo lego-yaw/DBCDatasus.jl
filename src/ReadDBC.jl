@@ -7,7 +7,7 @@ export dbcTable, dbctodbf
 using DBFTables
 using DataFrames
 using Logging
-using Libdl
+using Base.Libc.Libdl
 using Base.Filesystem
 
 
