@@ -6,7 +6,6 @@ export dbcTable, dbctodbf
 # Importing packages 
 using DBFTables
 using DataFrames
-using Logging
 using Base.Libc.Libdl
 using Base.Filesystem
 
