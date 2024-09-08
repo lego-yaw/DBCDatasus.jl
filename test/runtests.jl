@@ -2,11 +2,12 @@ using Test
 using ReadDBC
 using DataFrames
 
+
 # Test the dbctodbf function
 @testset "ReadDBC Tests" begin
     # Set up file paths 
     input_file = "src/ABOAC1909.dbc"
-    output_file = "src/ABOAC1909.dbf"
+    output_file = "src/ABOAC1909.dbf"     
     
     # Call the dbctodbf function
     result = dbctodbf(input_file, output_file)
