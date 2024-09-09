@@ -3,8 +3,18 @@ uuid = "0a41c9ea-d8d3-4f8c-9570-eb3876ab6987"
 authors = ["lego-yaw <yawyoung5@gmail.com> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+DBCtoDBF_jll = "404e8f35-d372-56c3-89ac-e648a26fddda"
+DBFTables = "75c7ada1-017a-5fb6-b8c7-2125ff2d6c93"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+
 [compat]
 julia = "1.10.4"
+DBCtoDBF_jll = "1.0.0"
+DBFTables = "1.2.6"
+DataFrames = "1.6.1"
+
+[dev-dependencies]
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
