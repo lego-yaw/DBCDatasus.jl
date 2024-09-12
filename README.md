@@ -42,7 +42,7 @@ or
 
 # Example
 >>> using Downloads, using DBCDatasus
->>> download("ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/ABOAC1909.dbc", "ABOAC1909.dbc") # this link downlaods the ABOAC1909.dbc file from Datasus database.
+>>> Downloads.download("ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/ABOAC1909.dbc", "ABOAC1909.dbc") # this link downlaods the ABOAC1909.dbc file from Datasus database.
 
 # run fucntion
 >>> df = dbcTable("ABOAC1909.dbc") ## read into dataframe Table
