@@ -46,10 +46,20 @@ or
 
 # run fucntion
 >>> df = dbcTable("ABOAC1909.dbc") ## read into dataframe Table, this will also greate a dbf file for you
->>> display(df) 
+>>> display(df)
 
-or
+#Note
+# This will create dbf files in your directory, to remove them just run
+>>>dir_path = "Path to directory"
+>>>files = readdir(dir_path)
+>>> for file in files
+       if endswith(file, ".dbf")
+        rm(joinpath(dir_path, file))
+        end
+    end
 
+
+### If you want to convert from dbc to dbf only, use this 
 >>> using DBCDatasus
 >>> dbctodbc("ABOAC1909.dbc", "ABOAC1909.dbf") # conversion into DBF format
 
